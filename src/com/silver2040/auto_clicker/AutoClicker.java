@@ -22,7 +22,7 @@ public class AutoClicker extends Canvas implements Runnable {
 
         Window window = new Window(500, 500/12*9, "AutoClicker", this);
 
-        this.addKeyListener(new KeyInput());
+        this.addKeyListener(new KeyInput(this));
         start();
         run();
         //this.addMouseListener(new MouseListener());
@@ -33,7 +33,7 @@ public class AutoClicker extends Canvas implements Runnable {
     public void leftClick(int button){
         try {
             robot.mousePress(button);
-            robot.delay(10);
+            robot.delay(5);
             robot.mouseRelease(button);
             robot.delay(delay);
         }catch(Exception e){

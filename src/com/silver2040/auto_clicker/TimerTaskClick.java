@@ -12,9 +12,10 @@ public class TimerTaskClick extends TimerTask {
     }
     @Override
     public void run() {
+        System.out.println("Running");
         while(ac.ButtonPressed){
             ac.leftClick(InputEvent.BUTTON1_DOWN_MASK);
-            if(ac.ButtonPressed == false){
+            if(!ac.ButtonPressed){
                 break;
             }
         }

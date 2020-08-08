@@ -5,17 +5,17 @@ import java.awt.event.KeyEvent;
 
 public class KeyInput extends KeyAdapter{
     public boolean active = true;
-
-    public KeyInput() {
-
+    AutoClicker ac;
+    public KeyInput(AutoClicker ac) {
+        this.ac = ac;
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
         if(e.isAltDown() && key == KeyEvent.VK_C){
-            active = false;
-            System.out.println(active);
+            ac.ButtonPressed = false;
+            System.out.println(ac.ButtonPressed);
         }
     }
 }
