@@ -19,6 +19,7 @@ public class Window extends Canvas {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(false);
             frame.setLocationRelativeTo(null);
+
             MsDelay.setBounds(240,110,100,25);
             MsDelay.setFont(Font.getFont(Font.MONOSPACED));
             Set.setBounds(100,175,100,20);

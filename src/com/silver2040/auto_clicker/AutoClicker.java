@@ -33,7 +33,7 @@ public class AutoClicker extends Canvas implements Runnable {
     public void leftClick(int button){
         try {
             robot.mousePress(button);
-            robot.delay(5);
+            robot.delay(2);
             robot.mouseRelease(button);
             robot.delay(delay);
         }catch(Exception e){
@@ -71,6 +71,8 @@ public class AutoClicker extends Canvas implements Runnable {
         g.drawString("Ms Delay",120,125);
 
         g.drawString("ALT + C will stop the clicker", 150, 250);
+
+        g.drawString("AutoClicker will begin 10s after clicking start", 130, 300);
 
 
         Font currentFont = g.getFont();
@@ -197,6 +199,7 @@ public class AutoClicker extends Canvas implements Runnable {
             if (System.currentTimeMillis() - timer > 100) {
                 timer += 1000;
                 System.out.println("FPS "+ frames);
+                frames = 0;
             }
         }
         stop();
