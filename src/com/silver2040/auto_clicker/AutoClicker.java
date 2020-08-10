@@ -72,7 +72,7 @@ public class AutoClicker extends Canvas implements Runnable {
 
         g.drawString("ALT + C will stop the clicker", 150, 250);
 
-        g.drawString("AutoClicker will begin 10s after clicking start", 130, 300);
+        g.drawString("AutoClicker will begin 10s after clicking start", 120, 300);
 
 
         Font currentFont = g.getFont();
