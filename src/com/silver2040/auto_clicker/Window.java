@@ -7,7 +7,7 @@ public class Window extends Canvas {
     private int Ms;
     JButton Set = new JButton("Set Ms");
     JTextField MsDelay = new JTextField();
-    ImageIcon icon = new ImageIcon("image/gear.png");
+   // ImageIcon icon = new ImageIcon("image/gear.png");
     JFrame frame;
     JButton Start;
         public Window(int width, int height, String Title, AutoClicker ac) {
@@ -19,7 +19,7 @@ public class Window extends Canvas {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setResizable(false);
             frame.setLocationRelativeTo(null);
-            frame.setIconImage(icon.getImage());
+            frame.setIconImage(new ImageIcon(getClass().getResource("image/gear.png")).getImage());
             MsDelay.setBounds(240,110,100,25);
             MsDelay.setFont(Font.getFont(Font.MONOSPACED));
             Set.setBounds(100,175,100,20);
