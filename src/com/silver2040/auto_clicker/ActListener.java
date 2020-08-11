@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 public class ActListener implements ActionListener {
     private Window w;
-    private int Ms;
+    public int Ms;
     public int check = 0;
     AutoClicker ac;
     public ActListener(Window w, AutoClicker ac){
